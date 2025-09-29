@@ -252,3 +252,98 @@ Kim onaylayacaksa zincir üzerinde karar verilir.
 
 </p>
 ---
+<h3 align="center">6 - Command Design Pattern</h3>
+
+### 📖 Tanım  
+**Command Design Pattern**, bir isteği (**işlemi**) nesneye dönüştüren **davranışsal (behavioral)** bir tasarım desenidir.  
+Böylece işlemler **parametre gibi saklanabilir, kuyruklanabilir veya geri alınabilir (undo)**.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- İstekleri **metot çağrısı yerine nesne** olarak temsil etmek için  
+- İşlemleri **kuyruklamak, loglamak veya geri almak (undo/redo)** için  
+- **Çağıran (Invoker)** ile **işlemi yapan (Receiver)** sınıflarını birbirinden ayırmak için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. Bir **Command arayüzü** tanımlanır → `Execute()` metodu içerir  
+2. **ConcreteCommand** sınıfları → belirli bir işlemi (**Receiver** üzerinde) tanımlar  
+3. **Receiver** → asıl işi yapan sınıftır  
+4. **Invoker** → komutu çağırır ama nasıl yapıldığını bilmez  
+5. **Client** → hangi komutun kullanılacağını belirler  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **akıllı ev kumandası** düşün:  
+
+- **Command** → `ICommand` arayüzü (`Execute`)  
+- **ConcreteCommand** → “Lambayı Aç Komutu”, “Televizyonu Kapat Komutu”  
+- **Receiver** → Lamba, Televizyon (gerçek cihaz)  
+- **Invoker** → Kumanda (hangi tuşa basıldığını bilir ama arkada hangi cihazın çalıştığını bilmez)  
+- **Kullanıcı** → “1’e bas” der → kumanda lambayı açar  
+
+---
+
+### ✅ Özet  
+- **Command Pattern** → İstekleri nesneye çevirerek parametre gibi saklanmasını, kuyruklanmasını, loglanmasını veya geri alınmasını sağlar  
+- **Avantajı** → Esneklik, gevşek bağlılık, undo/redo desteği  
+
+---
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/xxxxx-command-pattern-diagram" 
+       alt="Command Design Pattern Diagram" 
+       width="70%" />
+</p>
+
+
+-----
+<h3 align="center">7 - Composite Design Pattern</h3>
+
+### 📖 Tanım  
+**Composite Design Pattern**, ağaç yapısındaki nesneleri (**bütün–parça ilişkisini**) aynı şekilde kullanmayı sağlayan bir **yapısal (structural)** tasarım desenidir.  
+Yani tek bir nesne ile bir grup nesne **aynı arayüz üzerinden** yönetilir.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- **Bireysel nesneler** ile **grup nesnelerini** aynı şekilde işlemek için  
+- **Hiyerarşik (ağaç) yapılarda** kodu basitleştirmek için  
+- “**Tekil–Grup farkı**” olmadan işlemler yapabilmek için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. Bir **Component (bileşen arayüzü)** tanımlanır  
+2. **Leaf (yaprak sınıf)** → Alt elemanı olmayan sınıf (ör. ürün)  
+3. **Composite (bileşik sınıf)** → Alt elemanları tutar ve yönetir (ör. kategori)  
+4. **Client** → Hem **Leaf** hem de **Composite** nesneleri aynı arayüz üzerinden kullanır  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **dosya sistemi** düşün:  
+
+- **Leaf** → Dosya (altı yoktur)  
+- **Composite** → Klasör (içinde dosya veya başka klasör olabilir)  
+- **Kullanıcı** → “Boyut hesapla” dediğinde;  
+  - Tek bir dosyanın boyutunu alabilir  
+  - Bir klasörün içindeki tüm dosyaların toplam boyutunu da alabilir  
+
+---
+
+### ✅ Özet  
+- **Composite Pattern** → Tekil nesneler ile grup nesnelerini aynı şekilde yönetmeyi sağlar  
+- **Avantajı** → Hiyerarşik yapıları sadeleştirir, kod tekrarını azaltır  
+
+---
+
+<p align="center">
+<img width="850" height="734" alt="image" src="https://github.com/user-attachments/assets/940e3bf7-8373-4394-9881-7e0822d51768" />
+</p>
+
+---
+
