@@ -202,7 +202,7 @@ Bir **hamburgerci** düşün:
 
 
 <p align="center">
- <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/5cbf7e5e-fc9b-4ed2-a018-06756bd04f7f" />
+<img width="778" height="723" alt="image" src="https://github.com/user-attachments/assets/6a1a71d9-5512-4a3b-9bf0-c996a3d99311" />
 </p>
 
 ---
