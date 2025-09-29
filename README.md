@@ -613,3 +613,48 @@ Bir **kitaplık** düşün:
 <p align="center">
  <img width="953" height="733" alt="image" src="https://github.com/user-attachments/assets/dad3b586-ae3e-41e1-b1cc-eb3a9285d4b7" />
 </p>
+---
+
+<h3 align="center">14 - Mediator Design Pattern</h3>
+
+### 📖 Tanım  
+**Mediator Design Pattern**, nesneler arasındaki **doğrudan iletişimi engelleyip**,  
+onların bir **aracı (mediator)** üzerinden haberleşmesini sağlayan bir **davranışsal (behavioral)** tasarım desenidir.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- Nesneler arasındaki **bağımlılığı azaltmak** için  
+- Karmaşık iletişim ağını **tek bir merkezden yönetmek** için  
+- Kodun **okunabilirliğini** ve **bakımını kolaylaştırmak** için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. Bir **Mediator arayüzü** tanımlanır → iletişimi yöneten metotları içerir  
+2. **ConcreteMediator** → Nesneler arasındaki etkileşimi koordine eder  
+3. **Colleague (katılımcılar)** → Sadece **mediator** ile konuşur, birbirleriyle doğrudan konuşmaz  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **hava trafik kontrol kulesi** düşün:  
+
+- **Uçaklar (Colleague)** → Doğrudan birbirleriyle konuşmaz  
+- **Kontrol Kulesi (Mediator)** → Uçaklarla iletişim kurar  
+- **Görev** → İniş–kalkış sırasını ayarlamak, çarpışmaları önlemek  
+
+➡️ Böylece **karmaşa engellenir**, iletişim düzenli olur  
+
+---
+
+### ✅ Özet  
+- **Mediator Pattern** → Nesneler arasındaki iletişimi merkezi bir aracı üzerinden yönetir  
+- **Avantajı** → Bağımlılıkları azaltır, karmaşık ilişkileri sadeleştirir, bakımı kolaylaştırır  
+
+---
+
+<p align="center">
+ <img width="949" height="733" alt="image" src="https://github.com/user-attachments/assets/83f69410-1999-470d-ba75-cb5d712426f6" />
+</p>
+---
