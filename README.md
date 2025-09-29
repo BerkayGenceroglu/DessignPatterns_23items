@@ -154,8 +154,9 @@ Kumanda değişmeden cihaz türü değişebilir.
 - **Bridge Design Pattern** → Soyutlama ve uygulamayı birbirinden ayırarak esnek ve bağımsız geliştirme sağlar  
 - **Avantajı** → Hem soyutlamanın hem de uygulamanın ayrı ayrı genişletilmesine izin verir, tekrar eden kodu azaltır  
 
----
 
 <p align="center">
-<img width="820" height="600" alt="image" src="https://github.com/user-attachments/assets/bc68ee25-5c30-4159-bc62-8f7437b953c3" />
+<img width=800" height="550" alt="image" src="https://github.com/user-attachments/assets/bc68ee25-5c30-4159-bc62-8f7437b953c3" />
 </p>
+
+---
