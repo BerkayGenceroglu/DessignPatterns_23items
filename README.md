@@ -389,3 +389,54 @@ Bir **restoran** düşün:
 <img width="807" height="734" alt="image" src="https://github.com/user-attachments/assets/1d05a521-753d-40ba-a0e8-9e3146a996dd" />
 
 </p>
+
+--
+
+
+
+<h3 align="center">9 - Decorator Design Pattern</h3>
+
+### 📖 Tanım  
+**Decorator Design Pattern**, bir nesnenin davranışlarını **değiştirmek** veya **genişletmek** için kullanılan bir **yapısal (structural)** tasarım desenidir.  
+Bunu **kalıtım yerine dinamik olarak sarmalama (wrapping)** ile yapar.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- Mevcut sınıfı **değiştirmeden yeni özellikler eklemek** için  
+- **Kod tekrarını önlemek** için  
+- Farklı kombinasyonlarla **esnek özellikler** oluşturabilmek için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. Bir **Component** arayüzü tanımlanır  
+2. **ConcreteComponent** → Bu arayüzü uygular (temel sınıf)  
+3. **Decorator** → Component arayüzünü uygular ama içinde başka bir Component referansı tutar  
+4. **ConcreteDecorator** sınıfları → Temel sınıfa yeni davranış ekler  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **kahve siparişi** düşün:  
+
+- **Component** → Sade Kahve  
+- **ConcreteDecorator 1** → Süt eklenmiş kahve  
+- **ConcreteDecorator 2** → Çikolata eklenmiş kahve  
+- İstediğin kadar dekoratör eklersin → **Sütlü + Çikolatalı + Kremalı kahve**  
+
+➡️ Temel kahve değişmez, sadece **üzerine özellikler eklenir**  
+
+---
+
+### ✅ Özet  
+- **Decorator Pattern** → Bir nesneye dinamik olarak yeni özellikler ekler  
+- **Avantajı** → Esneklik, kod tekrarını azaltma, kalıtım kullanmadan genişletme  
+
+---
+
+<p align="center">
+ <img width="779" height="713" alt="image" src="https://github.com/user-attachments/assets/e7f83dda-e7d9-41a3-8ae5-2ae83d74f02e" />
+</p
+  
+---
