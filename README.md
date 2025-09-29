@@ -570,3 +570,46 @@ Bir **oyun** düşün:
 <p align="center">
   <img width="807" height="546" alt="image" src="https://github.com/user-attachments/assets/6c576dbd-1e43-4f8c-a0b9-cf8660784038" />
 </p>
+---
+<h3 align="center">13 - Iterator Design Pattern</h3>
+
+### 📖 Tanım  
+**Iterator Design Pattern**, bir koleksiyonun (liste, dizi, ağaç vb.) içindeki elemanlara,  
+koleksiyonun iç yapısını bilmeden **sırayla erişmeyi** sağlayan bir **davranışsal (behavioral)** tasarım desenidir.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- Koleksiyonun nasıl saklandığını bilmeden **elemanlarına erişmek** için  
+- Aynı koleksiyon üzerinde farklı **dolaşma (iteration) yöntemleri** tanımlayabilmek için  
+- Kodun **okunabilirliğini artırmak** için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. Bir **Iterator arayüzü** tanımlanır → `HasNext()`, `Next()` metotlarını içerir  
+2. **ConcreteIterator** → Koleksiyondaki elemanlara erişimi gerçekleştirir  
+3. **Aggregate (Collection) arayüzü** → `CreateIterator()` metodunu sağlar  
+4. **ConcreteAggregate** → Iterator’u döndürür  
+5. **Client** → Sadece iterator üzerinden elemanlara erişir  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **kitaplık** düşün:  
+
+- Kitaplıkta çok sayıda kitap var  
+- **Iterator** → “Sonraki kitabı getir”, “Başka kitap var mı?” sorularını yönetir  
+- Kullanıcı kitaplığın iç yapısını (**kitaplar liste mi, raflarda mı, alfabetik mi?**) bilmeden sırayla kitaplara erişebilir  
+
+---
+
+### ✅ Özet  
+- **Iterator Pattern** → Koleksiyon elemanlarına sırayla erişmeyi sağlar, iç yapıyı gizler  
+- **Avantajı** → Esneklik, **kapsülleme (encapsulation)**, farklı dolaşma yöntemlerine imkan tanıma  
+
+---
+
+<p align="center">
+ <img width="953" height="733" alt="image" src="https://github.com/user-attachments/assets/dad3b586-ae3e-41e1-b1cc-eb3a9285d4b7" />
+</p>
