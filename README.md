@@ -115,3 +115,47 @@ Avantajı → Eski ve yeni sistemleri birlikte çalıştırmak, kodu tekrar yazm
 </p>
 
 ---
+<h3 align="center">3 - Bridge Design Pattern</h3>
+
+### 📖 Tanım  
+**Bridge Design Pattern**, soyutlama (**Abstraction**) ile uygulama (**Implementation**) kısımlarını birbirinden ayırarak,  
+ikisinin de bağımsız şekilde geliştirilebilmesini sağlayan yapısal bir tasarım desenidir.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- Soyutlama ile uygulamanın birbirine **sıkı sıkıya bağlı olmasını engellemek** için  
+- Hem soyutlamayı hem de uygulamayı **ayrı ayrı genişletebilmek** için  
+- **Kod tekrarını azaltmak** ve **esnekliği artırmak** için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. Bir **Abstraction (Soyutlama sınıfı)** tanımlanır → kullanıcı bu sınıf üzerinden sistemi görür  
+2. Bir **Implementor (Uygulama arayüzü)** tanımlanır → detayların nasıl yapılacağını belirler  
+3. **ConcreteImplementor** sınıfları bu arayüzü uygular  
+4. **Abstraction** sınıfı, **implementasyonu** kullanarak işlemleri gerçekleştirir  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **uzaktan kumanda** düşün:  
+
+- **Abstraction** → Kumanda (kullanıcı sadece “aç/kapat” düğmesine basar)  
+- **Implementor** → Elektronik cihaz arayüzü (TV, Radyo, Klima gibi)  
+- **ConcreteImplementor** → TV sınıfı, Radyo sınıfı, Klima sınıfı  
+
+➡️ Kullanıcı aynı kumanda ile farklı cihazları yönetebilir.  
+Kumanda değişmeden cihaz türü değişebilir.  
+
+---
+
+### ✅ Özet  
+- **Bridge Design Pattern** → Soyutlama ve uygulamayı birbirinden ayırarak esnek ve bağımsız geliştirme sağlar  
+- **Avantajı** → Hem soyutlamanın hem de uygulamanın ayrı ayrı genişletilmesine izin verir, tekrar eden kodu azaltır  
+
+---
+
+<p align="center">
+<img width="820" height="600" alt="image" src="https://github.com/user-attachments/assets/bc68ee25-5c30-4159-bc62-8f7437b953c3" />
+</p>
