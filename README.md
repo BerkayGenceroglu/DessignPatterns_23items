@@ -204,4 +204,5 @@ Bir **hamburgerci** düşün:
 <p align="center">
  <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/5cbf7e5e-fc9b-4ed2-a018-06756bd04f7f" />
 </p>
+
 ---
