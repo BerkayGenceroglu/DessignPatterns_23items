@@ -568,7 +568,7 @@ Bir **oyun** düşün:
 ---
 
 <p align="center">
-  <img width="807" height="546" alt="image" src="https://github.com/user-attachments/assets/6c576dbd-1e43-4f8c-a0b9-cf8660784038" />
+ <img width="953" height="733" alt="image" src="https://github.com/user-attachments/assets/dad3b586-ae3e-41e1-b1cc-eb3a9285d4b7" />
 </p>
 ---
 <h3 align="center">13 - Iterator Design Pattern</h3>
