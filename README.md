@@ -345,3 +345,47 @@ Bir **dosya sistemi** düşün:
 
 ---
 
+<h3 align="center">8 - CQRS (Command Query Responsibility Segregation)</h3>
+
+### 📖 Tanım  
+**CQRS (Command Query Responsibility Segregation)** bir **tasarım yaklaşımıdır**.  
+Okuma (**Query**) ve Yazma (**Command**) işlemlerinin farklı mantıklarla ele alınmasını sağlar.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- Veri **okuma** ve **yazma** işlemlerinin ihtiyaçları farklıdır → ayrı yönetilirse **performans ve esneklik artar**  
+- Büyük sistemlerde **karmaşayı azaltmak** için  
+- **Sorgular (read)** → hızlı ve optimize olmalı  
+- **Komutlar (write)** → iş kurallarına uymalıdır  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. **Command** → Sistemde değişiklik yapan işlemler (insert, update, delete)  
+2. **Query** → Sistemde sadece veri getiren işlemler  
+3. Bu ikisi farklı **handler sınıflarında** yazılır  
+4. Ortak bir **Mediator** veya benzer yapı (örn. MediatR) üzerinden çağrılır  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **restoran** düşün:  
+
+- **Command (Yazma)** → Garsona sipariş vermek (sistemde değişiklik olur, mutfağa bilgi gider)  
+- **Query (Okuma)** → Garsona “Siparişim hazır mı?” diye sormak (sadece bilgi gelir, sistemde değişiklik olmaz)  
+
+➡️ Sipariş vermek ile siparişi sorgulamak farklı süreçlerdir, ama aynı sistem üzerinden yönetilir.  
+
+---
+
+### ✅ Özet  
+- **CQRS Pattern** → Okuma ve yazma işlemlerini ayırarak kodu sadeleştirir ve ölçeklenebilir hale getirir  
+- **Avantajı** → Performans artışı, okunabilir kod, karmaşanın azalması  
+
+---
+
+<p align="center">
+<img width="807" height="734" alt="image" src="https://github.com/user-attachments/assets/1d05a521-753d-40ba-a0e8-9e3146a996dd" />
+
+</p>
