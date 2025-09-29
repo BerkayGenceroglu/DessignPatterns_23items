@@ -27,37 +27,47 @@ Her desen ayrı klasör ve örnekler halinde sunulmuştur.
 ---
 
 <h2 align="center">Şimdi Tek Tek Özet Geçelim</h2>
-<h3 align="center">1-Abstract Design Pattern</h2>
-Tanım:
-Abstract Design Pattern, bir nesnenin hangi sınıftan türetileceğini tam olarak bilmeden, soyut (abstract) bir yapı üzerinden nesne üretmeyi sağlayan tasarım desenidir. Yani ortak bir çatı (abstract class veya interface) tanımlanır, farklı sınıflar bu çatıyı uygular.
+<h3 align="center">1 - Abstract Design Pattern</h3>
 
-Neden Kullanılır?
+### 📖 Tanım  
+**Abstract Design Pattern**, bir nesnenin hangi sınıftan türetileceğini tam olarak bilmeden, soyut (**abstract class** veya **interface**) bir yapı üzerinden nesne üretmeyi sağlar.  
+Yani ortak bir çatı tanımlanır, farklı sınıflar bu çatıyı uygular.
 
-Kodun esnek ve genişletilebilir olması için.
+---
 
-Değişen durumlarda (farklı ürün, farklı senaryo) aynı çatı üzerinden farklı nesneler oluşturabilmek için.
+### 🎯 Neden Kullanılır?  
+- Kodun **esnek** ve **genişletilebilir** olması için  
+- Farklı ürün/senaryolarda aynı çatı üzerinden farklı nesneler oluşturabilmek için  
+- **Bağımlılıkları azaltmak** için  
 
-Bağımlılıkları azaltmak için.
+---
 
-Nasıl Kullanılır?
+### ⚙️ Nasıl Kullanılır?  
+1. Bir **abstract class** veya **interface** tanımlanır  
+2. Ortak davranışlar burada belirlenir  
+3. Farklı sınıflar bu soyut yapıyı **inherit** (kalıtım) ederek kendi özel davranışlarını yazar  
+4. Kullanıcı kodu sadece **abstract yapıyı bilir**, hangi sınıfın çağrıldığıyla uğraşmaz  
 
-Önce bir abstract class veya interface tanımlanır.
+---
 
-Ortak davranışlar burada belirlenir.
+### 🌍 Günlük Hayat Örneği  
+Bir **içecek makinesi** düşün:  
 
-Farklı sınıflar bu soyut yapıyı inherit (kalıtım) ederek kendi özel davranışlarını yazar.
+- Makine sadece `IçecekHazırla()` soyut metodunu bilir  
+- **Kahve sınıfı** bu metodu kahveye göre uygular  
+- **Çay sınıfı** bu metodu çaya göre uygular  
+- Kullanıcı “içecek hazırla” der → arkada çay mı kahve mi hazırlandığını bilmek zorunda değildir  
 
-Kullanıcı kodu ise sadece abstract yapıyı bilir, hangi sınıfın çağrıldığıyla uğraşmaz.
+---
+### ✅ Özet 
 
-Günlük Hayat Örneği:
-Bir içecek makinesi düşün:
-
-Makine sadece "IçecekHazırla()" soyut metodunu bilir.
-
-Kahve sınıfı bu metodu kahveye göre, çay sınıfı ise çaya göre uygular.
-
-Kullanıcı “içecek hazırla” der, ama arkada çay mı kahve mi hazırlandığını bilmek zorunda değildir.
-
-abstract Design Pattern → Ortak bir şablon üzerinden farklı nesneler üretmeyi sağlar.
+Abstract Design Pattern → Ortak bir şablon üzerinden farklı nesneler üretmeyi sağlar.
 Avantajı → Esneklik, bağımlılığı azaltma, genişletilebilirlik.
-<img width="1382" height="918" alt="image" src="https://github.com/user-attachments/assets/9e999a68-6dee-4f2f-a505-75a9d3449262" />
+
+---
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9e999a68-6dee-4f2f-a505-75a9d3449262" 
+       alt="Abstract Design Pattern Diagram" 
+       width="70%" />
+</p>
