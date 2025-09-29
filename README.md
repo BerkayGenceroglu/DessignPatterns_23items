@@ -526,4 +526,6 @@ Bir **araç kiralama ofisi** düşün:
 
 <p align="center">
 <img width="871" height="692" alt="image" src="https://github.com/user-attachments/assets/a1873dde-7151-46b9-959d-3c98938b0c8f" />
-</p>
+</p
+  
+---
