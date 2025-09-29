@@ -160,3 +160,48 @@ Kumanda değişmeden cihaz türü değişebilir.
 </p>
 
 ---
+<h3 align="center">4 - Builder Design Pattern</h3>
+
+### 📖 Tanım  
+**Builder Design Pattern**, karmaşık nesnelerin adım adım (**step by step**) oluşturulmasını sağlayan bir **yapılandırma (creational)** tasarım desenidir.  
+Nesnenin **nasıl oluşturulacağı** ile **hangi parçalarının olacağı** birbirinden ayrılır.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- Karmaşık nesneleri **yönetilebilir** şekilde kurmak için  
+- Aynı nesnenin farklı tiplerini (**farklı kombinasyonlarla**) oluşturabilmek için  
+- Kodun **okunabilirliğini** ve **bakımını kolaylaştırmak** için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. **Product** (Ürün sınıfı) tanımlanır → oluşturulacak nesne  
+2. Bir **Builder arayüzü** oluşturulur → hangi adımların olacağını belirtir  
+3. **Concrete Builder** sınıfları → bu adımları farklı şekillerde uygular  
+4. **Director** sınıfı → adımların sırasını yönetir  
+5. Sonuç → farklı kombinasyonlarla aynı tipte ürünler üretilebilir  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **hamburgerci** düşün:  
+
+- **Product** → Hamburger  
+- **Builder** → Hamburgerin adımları: ekmek seç, köfte ekle, sos ekle, içecek ekle  
+- **Concrete Builder** → McDonald’s Burger Builder, Burger King Burger Builder (farklı içerikler)  
+- **Director** → Kasadaki görevli “BigMac yap” dediğinde adımları sırasıyla uygular  
+
+➡️ Sonuç: Aynı süreçle farklı türde hamburgerler hazırlanabilir  
+
+---
+
+### ✅ Özet  
+- **Builder Design Pattern** → Karmaşık nesneleri adım adım inşa etmeyi sağlar  
+- **Avantajı** → Farklı türde ürünleri aynı süreçle oluşturabilme, esneklik ve düzenli kod yapısı  
+
+
+<p align="center">
+ <img width="964" height="646" alt="image" src="https://github.com/user-attachments/assets/5cbf7e5e-fc9b-4ed2-a018-06756bd04f7f" />
+</p>
+---
