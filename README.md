@@ -4,7 +4,7 @@ Bu repo, yazılım geliştirme sürecinde sıklıkla kullanılan **Tasarım Dese
 Her bir tasarım deseni için:
 
 - **Tanım**
-- **Avantajlar ve kullanım alanları**  
+- **Avantajlar ve kullanım alanları**   
 - **Günlük hayattan benzetmeler**  
 - **C# ile örnek kod uygulamaları**  
 
@@ -658,3 +658,46 @@ Bir **hava trafik kontrol kulesi** düşün:
  <img width="949" height="733" alt="image" src="https://github.com/user-attachments/assets/83f69410-1999-470d-ba75-cb5d712426f6" />
 </p>
 ---
+<h3 align="center">15 - Memento Design Pattern</h3>
+
+### 📖 Tanım  
+**Memento Design Pattern**, bir nesnenin geçmiş durumunu kaydedip gerektiğinde bu duruma geri dönmesini sağlayan bir **davranışsal (behavioral)** tasarım desenidir.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- Nesnenin **durumunu (state) saklamak** için  
+- **Undo (geri al)** veya **rollback** gibi özellikleri uygulamak için  
+- Nesnenin iç yapısını dışarıya açmadan **geçmişe dönmesini sağlamak** için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. **Originator** → Durumu oluşturan ve değiştiren sınıf  
+2. **Memento** → Originator’un durumunu saklayan sınıf (genellikle `private`)  
+3. **Caretaker** → Memento nesnesini saklar ama içeriğini bilmez. Gerekirse geri yükler  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **metin editörü (Word, Notepad)** düşün:  
+
+- **Originator** → Editör (yazı yazıyorsun)  
+- **Memento** → Kaydedilmiş sürüm (**Ctrl + S**)  
+- **Caretaker** → Geri al / ileri al (**Undo / Redo**) özelliği  
+
+➡️ Kullanıcı yanlışlıkla bir satırı sildiğinde → “Undo” yapar, eski sürüme döner  
+
+---
+
+### ✅ Özet  
+- **Memento Pattern** → Nesnenin geçmiş durumlarını kaydedip geri yüklemeye imkan tanır  
+- **Avantajı** → Undo/redo, sürüm yönetimi, veri kaybını önleme  
+
+---
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/xxxxx-memento-pattern-diagram" 
+       alt="Memento Design Pattern Diagram" 
+       width="70%" />
+</p>
