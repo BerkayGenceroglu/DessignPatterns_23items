@@ -64,10 +64,10 @@ Bir **içecek makinesi** düşün:
 Abstract Design Pattern → Ortak bir şablon üzerinden farklı nesneler üretmeyi sağlar.
 Avantajı → Esneklik, bağımlılığı azaltma, genişletilebilirlik.
 
----
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/9e999a68-6dee-4f2f-a505-75a9d3449262" 
        alt="Abstract Design Pattern Diagram" 
        width="70%" />
 </p>
+---
