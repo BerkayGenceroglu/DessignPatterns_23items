@@ -70,4 +70,5 @@ Avantajı → Esneklik, bağımlılığı azaltma, genişletilebilirlik.
        alt="Abstract Design Pattern Diagram" 
        width="70%" />
 </p>
+
 ---
