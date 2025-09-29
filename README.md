@@ -529,3 +529,44 @@ Bir **araç kiralama ofisi** düşün:
 </p
   
 ---
+<h3 align="center">12 - Flyweight Design Pattern</h3>
+
+### 📖 Tanım  
+**Flyweight Design Pattern**, çok sayıda benzer nesnenin hafızada tekrar tekrar oluşturulmasını engelleyip,  
+ortak verileri paylaşarak **bellek kullanımını optimize eden** bir **yapısal (structural)** tasarım desenidir.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- **Bellek tüketimini azaltmak** için  
+- Aynı özelliklere sahip nesnelerin tekrar tekrar oluşturulmasını engellemek için  
+- Büyük ölçekli sistemlerde **performansı artırmak** için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. Nesnenin **içsel (intrinsic)** verileri tanımlanır → paylaşılabilir, ortak özellikler  
+2. **Dışsal (extrinsic)** veriler çalışma sırasında dışarıdan gönderilir → her nesneye özel bilgiler  
+3. Bir **Flyweight Factory** sınıfı nesneleri üretir ve paylaşır  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **oyun** düşün:  
+
+- Oyunda **10.000 ağaç** var  
+- Her ağacın türü, rengi, dokusu aslında aynı olabilir → bu bilgiler **intrinsic (ortak)** olarak saklanır  
+- Ama her ağacın **konumu farklıdır** → bu bilgi **extrinsic (dışarıdan verilen)** olur  
+- ➡️ Böylece 10.000 nesne yerine ortak birkaç nesne hafızada tutulur, **RAM dolmaz**  
+
+---
+
+### ✅ Özet  
+- **Flyweight Pattern** → Ortak verileri paylaşarak bellek kullanımını azaltır  
+- **Avantajı** → Hafıza optimizasyonu, performans artışı, tekrar eden nesnelerden kaçınma  
+
+---
+
+<p align="center">
+ ![Uploading image.png…]()
+</p>
