@@ -294,9 +294,7 @@ Bir **akıllı ev kumandası** düşün:
 ---
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/xxxxx-command-pattern-diagram" 
-       alt="Command Design Pattern Diagram" 
-       width="70%" />
+ <img width="788" height="658" alt="image" src="https://github.com/user-attachments/assets/c1c0c68c-263e-465e-8a7d-654cbc31c48d" />
 </p>
 
 
