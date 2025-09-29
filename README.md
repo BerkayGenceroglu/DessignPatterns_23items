@@ -485,3 +485,45 @@ Bir **otel resepsiyonu** düşün:
 </p>
 
 ---
+<h3 align="center">11 - Factory Design Pattern</h3>
+
+### 📖 Tanım  
+**Factory Design Pattern**, nesne oluşturma işini doğrudan `new` ile yapmak yerine,  
+tek bir **fabrika (factory)** sınıfı üzerinden gerçekleştiren bir **oluşturucu (creational)** tasarım desenidir.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- Nesne oluşturma sürecini **merkezileştirmek** için  
+- **Kod tekrarını azaltmak** için  
+- Hangi sınıfın oluşturulacağını **çalışma zamanında belirlemek** için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. Bir **Product arayüzü** tanımlanır  
+2. Farklı sınıflar (**Concrete Products**) bu arayüzü uygular  
+3. Bir **Factory sınıfı**, hangi product’ın üretileceğine karar verir  
+4. **Client (kullanıcı)** → Sadece Factory’i çağırır, hangi sınıfın döneceğini bilmez  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **araç kiralama ofisi** düşün:  
+
+- **Product** → Araç arayüzü (**IAraç**)  
+- **Concrete Products** → Araba, Motosiklet, Minibüs  
+- **Factory** → Müşterinin ihtiyacına göre uygun aracı üretir  
+- **Kullanıcı** → “Bana bir araç lazım” der → hangi sınıfın verileceğini bilmez, **Factory karar verir**  
+
+---
+
+### ✅ Özet  
+- **Factory Pattern** → Nesne oluşturma sürecini merkezi bir fabrika sınıfına devreder  
+- **Avantajı** → Gevşek bağlılık, kolay genişletilebilirlik, kod tekrarının azalması  
+
+---
+
+<p align="center">
+<img width="871" height="692" alt="image" src="https://github.com/user-attachments/assets/a1873dde-7151-46b9-959d-3c98938b0c8f" />
+</p>
