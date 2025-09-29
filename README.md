@@ -56,4 +56,5 @@ Makine sadece "IçecekHazırla()" soyut metodunu bilir.
 
 Kahve sınıfı bu metodu kahveye göre, çay sınıfı ise çaya göre uygular.
 
-Kullanıcı “içecek hazırla” der, ama arkada çay mı kahve mi hazırlandığını bilmek zorunda değild
+Kullanıcı “içecek hazırla” der, ama arkada çay mı kahve mi hazırlandığını bilmek zorunda değildir.
+https://sdmntprcentralus.oaiusercontent.com/files/00000000-392c-61f5-a87c-338e55aa849d/raw?se=2025-09-29T14%3A29%3A58Z&sp=r&sv=2024-08-04&sr=b&scid=576df916-7e2d-54f8-9a36-3e9ca3b805b6&skoid=f28c0102-4d9d-4950-baf0-4a8e5f6cf9d4&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-09-29T02%3A30%3A03Z&ske=2025-09-30T02%3A30%3A03Z&sks=b&skv=2024-08-04&sig=aiVxtM4oHlIsEgb7T01UYTZtdhVwyQt/xrx1cBDjO84%3D
