@@ -111,7 +111,7 @@ Adapter Design Pattern → Uyumsuz yapıları uyumlu hale getirir.
 Avantajı → Eski ve yeni sistemleri birlikte çalıştırmak, kodu tekrar yazmadan entegre etmek.
 
 <p align="center">
-<img width="668" height="600" alt="image" src="https://github.com/user-attachments/assets/3e66a66e-a241-4a03-be78-c7d8598208f3" />
+<img width="763" height="644" alt="image" src="https://github.com/user-attachments/assets/043132d9-0c9a-4cf4-893c-143287a2d646" />
 </p>
 
 ---
@@ -440,3 +440,49 @@ Bir **kahve siparişi** düşün:
 </p
   
 ---
+<h3 align="center">10 - Facade Design Pattern</h3>
+
+### 📖 Tanım  
+**Facade Design Pattern**, karmaşık bir sistemi **tek bir basit arayüz** ile kullanmayı sağlayan bir **yapısal (structural)** tasarım desenidir.  
+Yani birçok sınıfın karmaşık işlemleri, kullanıcıya sade bir **kapı (facade)** üzerinden sunulur.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- Kullanıcıyı sistemin **karmaşasından korumak** için  
+- Alt sistemlere doğrudan erişimi engelleyip, **tek noktadan yönetim** sağlamak için  
+- Kodun **okunabilirliğini** ve **bakımını kolaylaştırmak** için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. Sistemde birçok **karmaşık sınıf** vardır (**Subsystems**)  
+2. Bir **Facade sınıfı**, bu sınıfları içinde barındırır  
+3. Kullanıcı sadece **Facade** üzerinden işlem yapar, detayları bilmek zorunda kalmaz  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **otel resepsiyonu** düşün:  
+
+- **Müşteri** sadece resepsiyon görevlisi ile konuşur  
+- **İşlemler**: Oda ayarlamak, restoran rezervasyonu yapmak, temizlik istemek → resepsiyon ilgili birimlere iletir  
+- **Müşteri** otelin tüm detaylarını bilmez, sadece resepsiyon ile iletişim kurar  
+
+➡️ Burada:  
+- **Resepsiyon → Facade**  
+- **Arka plandaki otel birimleri → Subsystem’ler**  
+
+---
+
+### ✅ Özet  
+- **Facade Pattern** → Karmaşık sistemlere basit bir giriş noktası sağlar  
+- **Avantajı** → Kullanıcıya kolaylık, sisteme düzen, bağımlılıkların azalması  
+
+---
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/xxxxx-facade-pattern-diagram" 
+       alt="Facade Design Pattern Diagram" 
+       width="70%" />
+</p>
