@@ -206,3 +206,49 @@ Bir **hamburgerci** düşün:
 </p>
 
 ---
+<h3 align="center">5 - Chain of Responsibility Design Pattern</h3>
+
+### 📖 Tanım  
+**Chain of Responsibility Design Pattern**, bir isteğin (**request**) birden fazla nesne tarafından **sırayla işlenmesini** sağlayan bir **davranışsal (behavioral)** tasarım desenidir.  
+Hangi nesnenin isteği işleyeceği, çalışma zamanında zincir üzerinde belirlenir.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- İsteği kimin ele alacağını **kodda sabitlememek** için  
+- İstek farklı koşullara göre farklı nesneler tarafından işlenebilsin diye  
+- **Sorumlulukları nesneler arasında paylaştırmak** ve bağımlılığı azaltmak için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. Bir **Handler (işleyici) arayüzü** tanımlanır  
+2. Her bir **ConcreteHandler**, bu arayüzü uygular  
+   - İsteği işler ya da zincirdeki bir sonraki nesneye aktarır  
+3. İstek **zincirin başına** gönderilir → uygun olan handler isteği işler  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **şirket izin onayı süreci** düşün:  
+
+- Çalışan **10 gün izin** istedi  
+- **Handler 1 (Takım Lideri)** → 3 güne kadar izin onaylayabilir. 10 günse → üstüne yollar  
+- **Handler 2 (Müdür)** → 7 güne kadar izin onaylayabilir. 10 günse → üstüne yollar  
+- **Handler 3 (Genel Müdür)** → Daha uzun izinleri onaylar  
+
+➡️ Çalışan sadece “izin isteği” gönderir.  
+Kim onaylayacaksa zincir üzerinde karar verilir.  
+
+---
+
+### ✅ Özet  
+- **Chain of Responsibility Pattern** → Bir isteği sırayla farklı nesnelerin ele almasına olanak tanır  
+- **Avantajı** → İsteğin kim tarafından işleneceğini bilmeye gerek yoktur, zincir **dinamik** ve **esnektir**  
+
+
+<p align="center">
+<img width="800" height="560" alt="image" src="https://github.com/user-attachments/assets/d22154f9-8bba-44cb-95a2-4b4585b0666a" />
+
+</p>
+---
