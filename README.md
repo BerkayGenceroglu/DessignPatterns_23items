@@ -568,5 +568,5 @@ Bir **oyun** düşün:
 ---
 
 <p align="center">
- ![Uploading image.png…]()
+  <img width="807" height="546" alt="image" src="https://github.com/user-attachments/assets/6c576dbd-1e43-4f8c-a0b9-cf8660784038" />
 </p>
