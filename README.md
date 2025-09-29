@@ -72,3 +72,43 @@ Avantajı → Esneklik, bağımlılığı azaltma, genişletilebilirlik.
 </p>
 
 ---
+<h3 align="center">2 - Adapter Design Pattern</h3>
+
+### 📖 Tanım  
+**Adapter Design Pattern**, uyumsuz iki sınıfı veya sistemi birbirine uyumlu hale getirmek için kullanılan yapısal bir tasarım desenidir.  
+Bir çeşit **çevirmen / dönüştürücü** görevi görür.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- Farklı **arayüzlere (interface)** sahip sınıfları birlikte çalıştırabilmek için  
+- Eski kodları **değiştirmeden** yeni sisteme entegre etmek için  
+- Kod tekrarını ve **karmaşıklığı azaltmak** için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. Bir **hedef arayüz (Target Interface)** tanımlanır  
+2. Bu arayüze uymayan bir mevcut sınıf (**Adaptee**) vardır  
+3. **Adapter sınıfı**, bu mevcut sınıfı hedef arayüze uydurur  
+4. Kullanıcı sadece **hedef arayüzü** kullanır, uyumsuzluğu fark etmez  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **priz adaptörü** düşün:  
+
+- Telefon şarj aletin **ABD fişine** göre tasarlanmış olabilir  
+- Türkiye’deki priz ise uyumlu değildir  
+- Bir **priz adaptörü** kullanarak cihazını şarj edebilirsin  
+➡️ Burada:  
+- **Priz = Sistem**  
+- **Cihaz = Sınıf**  
+- **Adaptör = Adapter Pattern**  
+
+
+
+<p align="center">
+<img width="668" height="654" alt="image" src="https://github.com/user-attachments/assets/3e66a66e-a241-4a03-be78-c7d8598208f3" />
+</p>
+
