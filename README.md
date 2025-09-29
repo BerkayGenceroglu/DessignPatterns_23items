@@ -57,4 +57,7 @@ Makine sadece "IçecekHazırla()" soyut metodunu bilir.
 Kahve sınıfı bu metodu kahveye göre, çay sınıfı ise çaya göre uygular.
 
 Kullanıcı “içecek hazırla” der, ama arkada çay mı kahve mi hazırlandığını bilmek zorunda değildir.
+
+abstract Design Pattern → Ortak bir şablon üzerinden farklı nesneler üretmeyi sağlar.
+Avantajı → Esneklik, bağımlılığı azaltma, genişletilebilirlik.
 <img width="1382" height="918" alt="image" src="https://github.com/user-attachments/assets/9e999a68-6dee-4f2f-a505-75a9d3449262" />
