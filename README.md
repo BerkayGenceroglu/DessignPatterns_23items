@@ -482,7 +482,5 @@ Bir **otel resepsiyonu** düşün:
 ---
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/xxxxx-facade-pattern-diagram" 
-       alt="Facade Design Pattern Diagram" 
-       width="70%" />
+  <img width="816" height="528" alt="image" src="https://github.com/user-attachments/assets/380001d2-1f27-41bc-aced-c8bff2387c85" />
 </p>
