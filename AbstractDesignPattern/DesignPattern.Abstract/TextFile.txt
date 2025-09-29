@@ -1,0 +1,13 @@
+﻿Ürün arayüzleri → tüm ürünlerin hangi özelliklere sahip olacağını belirler.
+
+Somut ürünler → bu ürünlerin farklı çeşitlerini (modern, klasik) üretir.
+
+Abstract Factory → bir ürün ailesinde hangi ürünlerin olacağını söyler.
+
+Somut fabrikalar → bu ürün ailesini uyumlu şekilde üretir.
+
+Kullanıcı → sadece fabrikayı seçer, gerisini fabrikaya bırakır.
+
+👉 Yani kısaca:
+Factory Method = Tek ürün
+Abstract Factory = Uyumlu ürün aile

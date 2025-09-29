@@ -1,0 +1,26 @@
+﻿@model RepositoryDesignPattern.EntityLayer.Concrete.Product
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<div class="container">
+    <br />
+    <form method="post">
+        <input type="hidden" asp-for="ProductId"/>
+        <br />
+        <label>Product Name</label>
+        <input class="form-control" type="text" asp-for="ProductName" />
+        <br />
+        <label>Product Stock</label>
+        <input class="form-control" type="text" asp-for="ProductStock" />
+        <br />
+        <label>Product Price</label>
+        <input class="form-control" type="text" asp-for="ProductPrice" />
+        <br />
+        <label>Category Id</label>
+        <input class="form-control" type="text" asp-for="CategoryId" />
+        <br />
+        <button class="btn btn-primary" type="submit">Ekle</button>
+    </form>
+</div>

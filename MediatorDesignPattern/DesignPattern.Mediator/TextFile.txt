@@ -1,0 +1,18 @@
+﻿IRequest<TResponse> → İsteğin sonucunun ne olacağını belirler.
+IRequestHandler<TRequest, TResponse> → “Ben TRequest alırım, TResponse dönerim.”
+
+. _mediator.Send(new HelloRequest { Name = "Berkay" })
+_mediator.Send(request) → “Bu request hangi handler’ın sorumluluğundaysa onu bul, çalıştır ve sonucu bana getir.”
+Burada bir istek (request) gönderiyoruz.
+new HelloRequest { Name = "Berkay" } → içine parametre doldurduk (Name).
+Send metodu → Mediator’a diyor ki: “Bu isteği al, kimin ilgilendiğini bul, ona gönder.”
+Mediator gider, HelloHandler’ı bulur ve çalıştırır.
+
+IRequest<string> → “Bu sınıf bir istek, sonucu string.”
+
+IRequestHandler<HelloRequest, string> →
+“Ben HelloRequest tipindeki istekleri işlerim ve sonucum string olur.”
+📌 Özet: Handler = “Bu isteği ben işliyorum, sonucu şöyle üretirim” demek.
+
+
+AsNoTracking → performans için sadece okumalık getir, takip etme.

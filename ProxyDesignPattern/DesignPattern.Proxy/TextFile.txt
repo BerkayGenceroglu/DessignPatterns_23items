@@ -1,0 +1,31 @@
+﻿🔹 Proxy Design Pattern Nedir?
+
+Proxy kelimesi “vekil” demek.
+
+Proxy Design Pattern, bir nesneye erişimi kontrol etmek için onun yerine geçen bir vekil nesne oluşturur.
+
+Yani “gerçek nesne”ye doğrudan ulaşmak yerine, önce proxy üzerinden geçersin.
+
+📌 Kısacası: Bir nesneye aracı koymaktır.
+
+🔹 Ne İşe Yarar?
+
+Gerçek nesne ağır veya kritik olabilir → proxy üzerinden kontrol sağlanır.
+
+Güvenlik: “Herkes gerçek nesneye erişemesin.”
+
+Performans: Gerçek nesne ihtiyaca göre lazy load (gecikmeli) çalıştırılır.
+
+Loglama, caching, erişim kontrolü gibi ekstra işler proxy’ye eklenebilir.
+
+🔹 Günlük Hayat Örneği
+
+Bir ünlü oyuncu düşün 🎬
+
+Ona ulaşmak isteyen herkes doğrudan gidemez.
+
+Önce menajer (proxy) ile konuşur.
+
+Menajer gerekli filtrelemeyi yapar, sadece uygun olanları oyuncuya iletir.
+
+👉 İşte menajer = Proxy.

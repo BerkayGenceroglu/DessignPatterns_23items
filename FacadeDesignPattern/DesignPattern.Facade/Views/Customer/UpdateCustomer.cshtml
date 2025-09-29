@@ -1,0 +1,27 @@
+﻿@model DesignPattern.Facade.DAL.Customer
+
+@{
+    ViewData["Title"] = "UpdateCustomer";
+    Layout = "~/Views/Shared/_FacadeLayout.cshtml";
+}
+
+<br />
+<br />
+<br />
+<form method="post">
+    <input type="hidden" asp-for="CustomerId" />
+    <br />
+    <label>Müşteri Ad</label>
+    <input class="form-control" type="text" asp-for="CustomerName" />
+    <br />
+    <label>Müşteri Soyad</label>
+    <input class="form-control" type="text" asp-for="CustomerSurname" />
+    <br />
+    <label>Müşteri Adress</label>
+    <input class="form-control" type="text" asp-for="CustomerAddress" />
+    <br />
+    <label>Müşteri Şehir</label>
+    <input class="form-control" type="text" asp-for="CustomerCity" />
+    <button class="btn btn-success">Güncelle</button>
+</form>
+

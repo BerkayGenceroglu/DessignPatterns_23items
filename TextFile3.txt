@@ -1,0 +1,32 @@
+﻿📌 Repository Pattern
+
+Veritabanı erişimini soyutlar → iş katmanı sadece Add, Update, Delete, Get gibi metodları çağırır.
+
+Generic Repository ile tek bir class yazıp tüm entity’lerde kullanabilirsin.
+
+📌 Context – DbContext ilişkisi
+
+Context aslında bir DbContext’tir → sadece senin projene özel hale getirilmiş versiyonudur (DbSet’lerle).
+
+DbContext = motor 🚗, Context = o motorun üstüne yapılmış özel kasa.
+
+📌 base(options)
+
+DbContext, çalışmak için ayar (provider, connection string) ister.
+
+Sen Startup’ta AddDbContext ile bu ayarı verirsin.
+
+base(options) → bu ayarı DbContext’e aktarır.
+
+DbContext ayarlarla hazır hale gelince Context’in de aynı ayarlarla çalışır.
+
+📌 OnConfiguring vs Startup
+
+OnConfiguring: Ayarı direkt Context içine gömersin → küçük projeler için olur ama esnek değildir.
+
+Startup + AddDbContext: Ayar dışarıdan (appsettings.json, DI) gelir → profesyonel projeler için best practice budur.
+
+👉 Kısaca:
+Context = DbContext’in özelleştirilmiş hali.
+DbContext motor, Context kasadır.
+Ayarı Startup’ta verip base(options) ile DbContext’e göndeririz.

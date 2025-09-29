@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = null;
+    var value = ViewBag.values as ProductComposite;
+    // ViewBag’deki nesneyi güvenli şekilde ProductComposite’e çeviriyoruz.
+}
+
+<link href="~/bootstrap.min.css" rel="stylesheet" />
+<div class="container">
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card-header">
+                Toplam Ürün Sayısı:@value!.TotalCount();
+            </div>
+            <div class="card-body">
+                @foreach (var item in value.Components)
+                {
+                    @Html.Raw(item.Display())
+                }
+            </div>
+        </div>
+    </div>
+</div>
+@* Özet: Raw = "Ham HTML'i çalıştır, encode etme!"RetryClaude does not have the ability to run the code it generates yet.
+Kısaca: HTML kodunu olduğu gibi render eder, encode etmez.gerçek HTML gibi render eder.
+ *@

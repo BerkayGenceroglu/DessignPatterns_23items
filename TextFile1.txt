@@ -1,0 +1,41 @@
+﻿override ve overload nedir kısaca
+ChatGPT:
+
+Kısaca:
+
+Override → Kalıtımda (inheritance) bir üst sınıftaki virtual/abstract metodu alt sınıfta yeniden yazmak demektir.
+👉 “Var olan davranışı ezip kendi versiyonunu yazmak.”
+
+Overload → Aynı sınıfta aynı isimli metodu, farklı parametre listeleriyle birden fazla kez tanımlamak.
+👉 “Aynı işi farklı yollardan yapabilmek.”
+
+Kod Örneği
+class Hayvan
+{
+    public virtual void SesCikar()
+    {
+        Console.WriteLine("Bilinmeyen ses");
+    }
+
+    // Overload örneği
+    public void HareketEt() => Console.WriteLine("Hareket ediyor...");
+    public void HareketEt(int hiz) => Console.WriteLine($"{hiz} km hızla hareket ediyor...");
+}
+
+class Kedi : Hayvan
+{
+    // Override örneği
+    public override void SesCikar()
+    {
+        Console.WriteLine("Miyav");
+    }
+}
+
+
+👉 Özet:
+
+Override = ezmek (kalıtımda davranışı değiştirmek)
+
+Overload = aşırı yüklemek (aynı isim, farklı parametrelerle çoklu versiyon)
+
+İstersen sana günlük hayat benzetmesiyle de kısaca açıklayayım mı?

@@ -1,0 +1,18 @@
+﻿Command klasörü: Sisteme bir şey ekleme, silme, güncelleme gibi değişiklik yapan işlemler burada olur. (Yazma işlemleri).
+
+Query klasörü: Sistemdeki verileri okumak, listelemek, detay getirmek gibi sadece okuma amaçlı işlemler burada olur. (Okuma işlemleri).
+
+Handler klasörü: Command veya Query’nin isteğini işler. Yani komut ya da sorgunun arkasındaki mantığı çalıştırır.
+
+Result / DTO klasörü: Query’den dönecek veya Command’den oluşacak verilerin taşındığı, dışarıya gönderilen sade modellerdir.
+
+Kısaca:
+
+Command = yaz
+
+Query = oku
+
+Handler = çalıştır
+
+Result/DTO = taşı
+----------------------------------------------------------------------------------------

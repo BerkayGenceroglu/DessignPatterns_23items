@@ -1,0 +1,79 @@
+﻿💻 C# Kod Örneği – Haber Sistemi
+using System;
+using System.Collections.Generic;
+
+namespace ObserverExample
+{
+    // Observer interface
+    interface IObserver
+    {
+        void Update(string message);
+    }
+
+    // Subject (Publisher)
+    class NewsAgency
+    {
+        private List<IObserver> observers = new List<IObserver>();
+
+        public void Subscribe(IObserver observer)
+        {
+            observers.Add(observer);
+        }
+
+        public void Unsubscribe(IObserver observer)
+        {
+            observers.Remove(observer);
+        }
+
+        public void Notify(string news)
+        {
+            foreach (var observer in observers)
+            {
+                observer.Update(news);
+            }
+        }
+    }
+
+    // Concrete Observers
+    class TvChannel : IObserver
+    {
+        private string name;
+        public TvChannel(string name) { this.name = name; }
+
+        public void Update(string message)
+        {
+            Console.WriteLine($"{name} kanalına haber düştü: {message}");
+        }
+    }
+
+    class MobileApp : IObserver
+    {
+        public void Update(string message)
+        {
+            Console.WriteLine($"Mobil uygulama bildirimi: {message}");
+        }
+    }
+
+    // Client
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            NewsAgency agency = new NewsAgency();
+
+            TvChannel cnn = new TvChannel("CNN Türk");
+            TvChannel ntv = new TvChannel("NTV");
+            MobileApp app = new MobileApp();
+
+            // Abonelikler ekleniyor
+            agency.Subscribe(cnn);
+            agency.Subscribe(ntv);
+            agency.Subscribe(app);
+
+            // Haber gönderiliyor
+            agency.Notify("Son dakika: Observer Design Pattern anlatılıyor!");
+
+            Console.ReadLine();
+        }
+    }
+}

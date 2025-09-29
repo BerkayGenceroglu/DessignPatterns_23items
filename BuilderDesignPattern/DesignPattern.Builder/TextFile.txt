@@ -1,0 +1,9 @@
+﻿Burger → karmaşık bir nesne (çok parçası var).
+
+IBurgerBuilder → burgerin nasıl oluşturulacağını tarif ediyor.
+
+CheeseBurgerBuilder → gerçek tarifi (somut builder) veriyor.
+
+BurgerDirector → sırayı belirliyor (önce ekmek, sonra köfte, sonra peynir...).
+
+Client → sadece “burger yap” diyor, tüm detaylarla uğraşmıyor.

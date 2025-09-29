@@ -1,0 +1,17 @@
+﻿ @model DesignPattern.TemplateMethod.TemplatePattern.PremiumPlan
+@{
+    ViewData["Title"] = "PremiumIndex";
+    Layout = null;
+}
+
+<div class="container">
+    <h2>BasicPlan Verileri</h2>
+    <h1>@Model.Content("Ücretli")</h1>
+    <h1>@Model.Price(250)</h1>
+    <h1>@Model.PlanType("Premium")</h1>
+    <h1>@Model.CountPerson(50)</h1>
+    <h1>@Model.Resolution("4K+HDR")</h1>
+</div>
+
+
+

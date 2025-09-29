@@ -1,0 +1,35 @@
+﻿@model List<DesignPattern.Facade.DAL.Product>
+@{
+    Layout = "~/Views/Shared/_FacadeLayout.cshtml";
+}
+
+<div class="container">
+    <br />
+    <br />
+    <br />
+    <table class="table table-bordered">
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Product Stock</th>
+            <th>Product Price</th>
+            <th>Product Category</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th>@item.ProductId</th>
+                <th>@item.ProductName</th>
+                <th>@item.ProductStock</th>
+                <th>@item.ProductPrice</th>
+                <th>@item.ProductCategory</th>
+                <th><a href="/Product/DeleteProduct/@item.ProductId" class="btn btn-danger">Sil</a></th>
+                <th><a href="/Product/UpdateProduct/@item.ProductId" class="btn btn-success">Güncelle</a></th>
+            </tr>
+        }
+    </table>
+</div>
+
+<a href="/Product/AddProduct" class="btn btn-warning">Ürün Ekle</a>

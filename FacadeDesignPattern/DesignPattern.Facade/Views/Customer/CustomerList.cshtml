@@ -1,0 +1,36 @@
+﻿@model List<DesignPattern.Facade.DAL.Customer>
+@{
+    ViewData["Title"] = "CustomerList";
+    Layout = "~/Views/Shared/_FacadeLayout.cshtml";
+}
+
+<div class="container">
+    <br />
+    <br />
+    <br />
+    <table class="table table-bordered">
+        <tr>
+            <th>Customer ID</th>
+            <th>Customer Name</th>
+            <th>Customer Surname</th>
+            <th>Customer Adress</th>
+            <th>Customer City</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th>@item.CustomerId</th>
+                <th>@item.CustomerName</th>
+                <th>@item.CustomerSurname</th>
+                <th>@item.CustomerAddress</th>
+                <th>@item.CustomerCity</th>
+                <th><a href="/Customer/DeleteCustomer/@item.CustomerId" class="btn btn-danger">Sil</a></th>
+                <th><a href="/Customer/UpdateCustomer/@item.CustomerId" class="btn btn-success">Güncelle</a></th>
+            </tr>
+        }
+    </table>
+</div>
+
+<a href="/Customer/AddCustomer" class="btn btn-warning">Müşteri Ekle</a>

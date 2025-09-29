@@ -1,0 +1,17 @@
+﻿🔹 Çalışma Mantığı
+
+Client, ProxyImage kullanıyor → gerçek nesneye doğrudan gitmiyor.
+
+ProxyImage, gerektiğinde RealImage’i oluşturuyor.
+
+Fazladan güvenlik, caching, lazy load gibi işler proxy’nin kontrolünde.
+
+🔹 Özet
+
+Proxy Pattern: Bir nesneye erişim için vekil (aracı) nesne kullanılır.
+
+Amaç: Güvenlik, performans, lazy load, loglama gibi avantajlar sağlamak.
+
+Günlük hayat: Menajer → ünlüye doğrudan gidemezsin, önce vekilden geçersin.
+
+Kod: Proxy sınıfı gerçek nesneyi içerir ve onunla aynı arayüzü uygular.
