@@ -2,7 +2,7 @@
 
 Bu repo, yazılım geliştirme sürecinde sıklıkla kullanılan **Tasarım Desenleri (Design Patterns)** üzerine hazırlanmıştır.  
 Her bir tasarım deseni için:
-
+ 
 - **Tanım**
 - **Avantajlar ve kullanım alanları**   
 - **Günlük hayattan benzetmeler**  
@@ -694,10 +694,92 @@ Bir **metin editörü (Word, Notepad)** düşün:
 - **Memento Pattern** → Nesnenin geçmiş durumlarını kaydedip geri yüklemeye imkan tanır  
 - **Avantajı** → Undo/redo, sürüm yönetimi, veri kaybını önleme  
 
+<p align="center">
+ <img width="752" height="720" alt="image" src="https://github.com/user-attachments/assets/1c44a3ab-0453-4572-94e0-f6d5245ad85a" />
+</p>---
+
+<h3 align="center">16 - Observer Design Pattern</h3>
+
+### 📖 Tanım  
+**Observer Design Pattern**, bir nesnede (**Subject**) olan değişikliğin,  
+ona bağlı diğer nesnelere (**Observers**) **otomatik olarak bildirilmesini** sağlayan bir  
+**davranışsal (behavioral)** tasarım desenidir.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- Nesneler arasındaki **bağımlılığı azaltmak** için  
+- Bir nesnede değişiklik olduğunda bağlı olanların **otomatik güncellenmesi** için  
+- **Olay–dinleyici (event-listener)** mantığını uygulamak için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. **Subject** → Gözlemlenen nesne, observer listesini tutar  
+2. **Observer arayüzü** → `Update()` metodu içerir  
+3. **ConcreteObserver** → Subject’teki değişikliklere tepki verir  
+4. Subject değiştiğinde → Tüm observer’lara haber gönderilir  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **YouTube kanalı** düşün:  
+
+- **Subject** → Kanal  
+- **Observers** → Aboneler  
+- Kanal yeni video yüklediğinde (**durum değişir**) → Tüm abonelere bildirim gider  
+- Aboneler videoyu izleyip kendi aksiyonlarını alır  
+
+---
+
+### ✅ Özet  
+- **Observer Pattern** → Bir nesnedeki değişikliklerin otomatik olarak diğer nesnelere duyurulmasını sağlar  
+- **Avantajı** → Olay tabanlı sistem kurma, gevşek bağlılık, kolay genişletilebilirlik  
+
 ---
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/xxxxx-memento-pattern-diagram" 
-       alt="Memento Design Pattern Diagram" 
-       width="70%" />
+ <img width="852" height="764" alt="image" src="https://github.com/user-attachments/assets/76949351-f5aa-44ea-a69d-05f0e353ce6b" />
 </p>
+<h3 align="center">17 - Prototype Design Pattern</h3>
+
+### 📖 Tanım  
+**Prototype Design Pattern**, mevcut bir nesnenin **kopyalanarak (clone edilerek)**  
+yeni bir nesne oluşturulmasını sağlayan bir **oluşturucu (creational)** tasarım desenidir.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- Nesne oluşturma **maliyetli** (çok zaman alan ya da pahalı) olduğunda  
+- Bir nesneyi baştan üretmek yerine **var olanın kopyasını** almak için  
+- Nesnenin **başlangıç ayarlarını tekrar tekrar yazmamak** için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. Bir **Prototype arayüzü** tanımlanır → `Clone()` metodu içerir  
+2. **ConcretePrototype** sınıfları, kendilerini kopyalayacak şekilde `Clone()` metodunu uygular  
+3. **Client**, `new` ile değil → `Clone()` ile yeni nesne elde eder  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **fotokopi makinesi** düşün:  
+
+- Elinde bir belge (**orijinal nesne**) var  
+- **Fotokopi çekince** → aynı içeriğe sahip bir kopya elde edersin  
+- Orijinal belgedeki bilgileri tekrar yazmana gerek kalmaz  
+
+---
+
+### ✅ Özet  
+- **Prototype Pattern** → Nesneleri `new` ile sıfırdan üretmek yerine, mevcut nesneyi **kopyalayarak** oluşturur  
+- **Avantajı** → Hız, performans, tekrar eden ayarları engelleme  
+
+---
+
+<p align="center">
+  <img width="834" height="762" alt="image" src="https://github.com/user-attachments/assets/f6e6f6d4-126e-47b6-98d5-c2f5831b624e" />
+</p>
+
+---
