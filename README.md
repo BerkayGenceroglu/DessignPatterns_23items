@@ -111,7 +111,7 @@ Adapter Design Pattern → Uyumsuz yapıları uyumlu hale getirir.
 Avantajı → Eski ve yeni sistemleri birlikte çalıştırmak, kodu tekrar yazmadan entegre etmek.
 
 <p align="center">
-<img width="668" height="654" alt="image" src="https://github.com/user-attachments/assets/3e66a66e-a241-4a03-be78-c7d8598208f3" />
+<img width="668" height="600" alt="image" src="https://github.com/user-attachments/assets/3e66a66e-a241-4a03-be78-c7d8598208f3" />
 </p>
 
 ---
