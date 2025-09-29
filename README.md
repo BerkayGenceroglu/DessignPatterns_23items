@@ -611,7 +611,7 @@ Bir **kitaplık** düşün:
 ---
 
 <p align="center">
- <img width="953" height="733" alt="image" src="https://github.com/user-attachments/assets/dad3b586-ae3e-41e1-b1cc-eb3a9285d4b7" />
+<img width="762" height="750" alt="image" src="https://github.com/user-attachments/assets/3ea73fbd-a7e9-4f76-848e-1d6cf86afd16" />
 </p>
 ---
 
