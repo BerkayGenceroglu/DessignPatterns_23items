@@ -565,7 +565,7 @@ Memento Pattern → Nesnenin geçmiş durumlarını kaydedip geri yüklemeye imk
 Avantajı → Undo/redo, sürüm yönetimi, veri kaybını önleme.  
 
 <p align="center">
- <img src="https://github.com/user-attachments/assets/1c44a3ab-0453-4572-94e0-f6d5245ad85a" width="70%" />
+ <img width="749" height="722" alt="image" src="https://github.com/user-attachments/assets/6f4d296c-9a1b-4d93-8f6b-43c3f0df3d4f" />
 </p>
 
 ---
@@ -630,8 +630,7 @@ Prototype Pattern → Nesneleri sıfırdan üretmek yerine kopyalayarak yeni nes
 Avantajı → Performans artışı, maliyetin azalması, esneklik.  
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/7db0c217-9dd3-41b3-bb47-28739a6e13fb" width="70%" />
-</p>
+<img width="834" height="762" alt="image" src="https://github.com/user-attachments/assets/f6e6f6d4-126e-47b6-98d5-c2f5831b624e" /></p>
 
 ---
 
@@ -665,8 +664,7 @@ Proxy Pattern → Bir nesneye erişimi aracı bir nesne üzerinden sağlar.
 Avantajı → Güvenlik, performans, ek işlemler, erişim kontrolü.  
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/9dc5b631-6c5f-4a38-a8a8-1d40f31d5b52" width="70%" />
-</p>
+<img width="759" height="471" alt="image" src="https://github.com/user-attachments/assets/dddb5f9e-a608-4a28-bd38-1c5a12ae7570" /></p>
 
 ---
 
@@ -699,8 +697,7 @@ Repository Pattern → Veritabanı erişimini soyutlar ve düzenler.
 Avantajı → Kod tekrarını azaltır, kolay test edilebilirlik sağlar, bağımlılıkları azaltır.  
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/2033f4d5-c1f1-4ae7-bf67-92de2a858b8a" width="70%" />
-</p>
+<img width="886" height="674" alt="image" src="https://github.com/user-attachments/assets/ec94217b-06ee-4fc8-b459-31773c7f65dd" /></p>
 
 ---
 
@@ -731,8 +728,7 @@ Singleton Pattern → Bir sınıfın sadece bir örneğinin olmasını sağlar.
 Avantajı → Merkezi yönetim, kaynak optimizasyonu, global erişim.  
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/5e6b9f2e-30a7-4b79-bc40-1c4084e13d17" width="70%" />
-</p>
+<img width="751" height="676" alt="image" src="https://github.com/user-attachments/assets/17d5e0db-6d8c-4790-9a63-a8f0a006fb45" /></p>
 
 ---
 
