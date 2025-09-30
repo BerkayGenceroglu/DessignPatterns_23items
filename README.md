@@ -760,8 +760,7 @@ State Pattern → Nesnelerin durumlarına göre farklı davranışlar sergilemes
 Avantajı → Kod sadeleşir, if-else zinciri ortadan kalkar, genişletilebilirlik artar.  
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/b62c2c16-5692-48b0-961a-17934e8fa26f" width="70%" />
-</p>
+<img width="749" height="722" alt="image" src="https://github.com/user-attachments/assets/6f4d296c-9a1b-4d93-8f6b-43c3f0df3d4f" /></p>
 
 ---
 
