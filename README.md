@@ -565,8 +565,7 @@ Memento Pattern → Nesnenin geçmiş durumlarını kaydedip geri yüklemeye imk
 Avantajı → Undo/redo, sürüm yönetimi, veri kaybını önleme.  
 
 <p align="center">
- <img width="749" height="722" alt="image" src="https://github.com/user-attachments/assets/6f4d296c-9a1b-4d93-8f6b-43c3f0df3d4f" />
-</p>
+<img width="752" height="720" alt="image" src="https://github.com/user-attachments/assets/1c44a3ab-0453-4572-94e0-f6d5245ad85a" /></p>
 
 ---
 
