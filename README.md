@@ -324,7 +324,7 @@ Avantajı → Performans artışı, okunabilir kod, karmaşanın azalması.
 - Query →  Veriyi getirir (ör. "Tüm kullanıcıları listele").
 - Handler →  Gelen Command veya Query’i işleyen sınıftır.
 - Result →  Handler’ın döndürdüğü cevaptır (ör. Query için bir DTO listesi, Command için işlem sonucu).
--- Kısaca
+
 - Command → “Bir şeyi değiştir” (yazma işlemi).
 - Query → “Bana bilgiyi getir” (okuma işlemi).
 - Handler → Komutu veya sorguyu işleyen sınıf.
