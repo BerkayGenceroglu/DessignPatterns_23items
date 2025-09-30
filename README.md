@@ -912,5 +912,5 @@ Bir **ülkenin cumhurbaşkanı** düşün:
 ---
 
 <p align="center">
-![Uploading image.png…]()
+<img width="751" height="676" alt="image" src="https://github.com/user-attachments/assets/17d5e0db-6d8c-4790-9a63-a8f0a006fb45" />
 </p>
