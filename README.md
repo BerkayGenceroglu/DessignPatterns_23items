@@ -913,4 +913,50 @@ Bir **ülkenin cumhurbaşkanı** düşün:
 
 <p align="center">
 <img width="751" height="676" alt="image" src="https://github.com/user-attachments/assets/17d5e0db-6d8c-4790-9a63-a8f0a006fb45" />
+</p
+
+ ---
+ <h3 align="center">21 - State Design Pattern</h3>
+
+### 📖 Tanım  
+**State Design Pattern**, bir nesnenin **iç durumuna göre davranışlarını dinamik olarak değiştirmesini** sağlayan bir  
+**davranışsal (behavioral)** tasarım desenidir.  
+Yani nesne, sanki farklı sınıflara aitmiş gibi farklı şekillerde davranır.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- Nesnenin davranışlarının **durumuna bağlı** olarak değişmesi gerektiğinde  
+- `if-else` veya `switch` gibi karmaşık kontrol bloklarından **kurtulmak** için  
+- Durum değişimlerini daha **okunabilir** ve **yönetilebilir** hale getirmek için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. Bir **State arayüzü** tanımlanır → her durumda yapılacak davranışlar burada yer alır  
+2. **ConcreteState** sınıfları → Bu arayüzü uygular ve kendi özel davranışlarını yazar  
+3. **Context sınıfı** → Mevcut durumu (**state**) tutar ve davranışları ona devreder  
+4. Durum değiştikçe → context nesnenin davranışı da değişir  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **trafik ışığı** düşün:  
+
+- **State arayüzü** → `Handle()` (ışığın duruma göre davranışı)  
+- **Concrete States** → Kırmızı, Sarı, Yeşil  
+- **Context** → Trafik lambası  
+- Lambanın rengi değiştikçe → sürücülere verilen mesaj da değişir  
+
+---
+
+### ✅ Özet  
+- **State Pattern** → Nesnenin durumuna göre davranışlarını değiştirmesini sağlar  
+- **Avantajı** → Karmaşık `if-else` yapılarından kurtarır, kodu daha okunabilir ve esnek hale getirir  
+
+---
+
+<p align="center">
+ <img width="749" height="722" alt="image" src="https://github.com/user-attachments/assets/6f4d296c-9a1b-4d93-8f6b-43c3f0df3d4f" />
 </p>
+
