@@ -960,3 +960,176 @@ Bir **trafik ışığı** düşün:
  <img width="749" height="722" alt="image" src="https://github.com/user-attachments/assets/6f4d296c-9a1b-4d93-8f6b-43c3f0df3d4f" />
 </p>
 
+---
+<h3 align="center">22 - Strategy Design Pattern</h3>
+
+### 📖 Tanım  
+**Strategy Design Pattern**, birbirinin yerine kullanılabilen farklı algoritmaları tanımlayıp,  
+bunları **çalışma zamanında seçmeye** imkân veren bir **davranışsal (behavioral)** tasarım desenidir.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- Farklı algoritmalar arasında **kolayca geçiş** yapmak için  
+- `if-else` yığınına girmeden **esnek bir yapı** kurmak için  
+- **Kod tekrarını azaltmak** ve genişletilebilirliği artırmak için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. Bir **Strategy arayüzü** tanımlanır → ortak metotları içerir  
+2. **ConcreteStrategy** sınıfları → Farklı algoritmaları uygular  
+3. **Context** → Hangi stratejinin kullanılacağını belirler ve çalıştırır  
+4. **Runtime (çalışma zamanı)** → Algoritma kolayca değiştirilebilir  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **navigasyon uygulaması** düşün:  
+
+- **Strategy** → `IRotaCiz` arayüzü  
+- **ConcreteStrategy** → “En kısa yol”, “En hızlı yol”, “Toll-free yol” gibi farklı rota algoritmaları  
+- **Context** → Navigasyon cihazı  
+- **Kullanıcı** → “En kısa yol” yerine “En hızlı yol” seçtiğinde algoritma değişir ama sistem aynı kalır  
+
+---
+
+### ✅ Özet  
+- **Strategy Pattern** → Algoritmalar arasında kolayca seçim yapmayı sağlar  
+- **Avantajı** → Esneklik, kod tekrarını azaltma, çalışma zamanında algoritma değiştirme  
+
+---
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/xxxxx-strategy-pattern-diagram" 
+       alt="Strategy Design Pattern Diagram" 
+       width="70%" />
+</p>
+<h3 align="center">22 - Strategy Design Pattern</h3>
+
+### 📖 Tanım  
+**Strategy Design Pattern**, birbirinin yerine kullanılabilen farklı algoritmaları tanımlayıp,  
+bunları **çalışma zamanında seçmeye** imkân veren bir **davranışsal (behavioral)** tasarım desenidir.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- Farklı algoritmalar arasında **kolayca geçiş** yapmak için  
+- `if-else` yığınına girmeden **esnek bir yapı** kurmak için  
+- **Kod tekrarını azaltmak** ve genişletilebilirliği artırmak için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. Bir **Strategy arayüzü** tanımlanır → ortak metotları içerir  
+2. **ConcreteStrategy** sınıfları → Farklı algoritmaları uygular  
+3. **Context** → Hangi stratejinin kullanılacağını belirler ve çalıştırır  
+4. **Runtime (çalışma zamanı)** → Algoritma kolayca değiştirilebilir  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **navigasyon uygulaması** düşün:  
+
+- **Strategy** → `IRotaCiz` arayüzü  
+- **ConcreteStrategy** → “En kısa yol”, “En hızlı yol”, “Toll-free yol” gibi farklı rota algoritmaları  
+- **Context** → Navigasyon cihazı  
+- **Kullanıcı** → “En kısa yol” yerine “En hızlı yol” seçtiğinde algoritma değişir ama sistem aynı kalır  
+
+---
+
+### ✅ Özet  
+- **Strategy Pattern** → Algoritmalar arasında kolayca seçim yapmayı sağlar  
+- **Avantajı** → Esneklik, kod tekrarını azaltma, çalışma zamanında algoritma değiştirme  
+
+---
+
+<p align="center">
+<img width="757" height="762" alt="image" src="https://github.com/user-attachments/assets/4f1712d3-85d2-4835-8ba0-37e3bfe5c6bc" />
+</p>
+
+<h3 align="center">23 - Template Method Design Pattern</h3>
+
+### 📖 Tanım  
+**Template Method Design Pattern**, bir algoritmanın **iskeletini (şablonunu)** bir **abstract sınıfta** tanımlayıp,  
+bazı adımların alt sınıflar tarafından **özelleştirilmesine izin veren** bir **davranışsal (behavioral)** tasarım desenidir.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- Ortak bir algoritmayı tekrar tekrar yazmadan, alt sınıflara **özelleştirme** imkânı vermek için  
+- **Kod tekrarını azaltmak** için  
+- Algoritmanın adımlarını **sabit tutarken**, bazı adımların **değişebilir** olmasını sağlamak için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. Bir **abstract sınıf** oluşturulur → algoritmanın adımları `TemplateMethod()` içinde sıralanır  
+2. Bazı adımlar **abstract** olarak bırakılır → alt sınıflar bunları kendine göre uygular  
+3. **Concrete sınıflar** → abstract metotları doldurur  
+4. **Client** → sadece `TemplateMethod()` çağırır, algoritma adım adım çalışır  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **yemek tarifi** düşün:  
+
+- **Template Method** → “Yemek Yap” adımları: *Malzemeleri hazırla → Pişir → Servis et*  
+- **ConcreteClass 1** → Makarna tarifi (malzemeler ve pişirme farklı)  
+- **ConcreteClass 2** → Pilav tarifi  
+
+➡️ İskelet aynı (**hazırla, pişir, servis et**) ama detaylar farklıdır  
+
+---
+
+### ✅ Özet  
+- **Template Method Pattern** → Algoritmanın iskeletini sabitler, bazı adımların alt sınıflarda özelleştirilmesine izin verir  
+- **Avantajı** → Kod tekrarını azaltır, iskeleti korur, esneklik sağlar  
+
+---
+
+<p align="center">
+<img width="755" height="759" alt="image" src="https://github.com/user-attachments/assets/61704fdc-d7e6-4621-8ed9-cf49d0234d3e" />
+</p>
+<h3 align="center">24 - Unit of Work Design Pattern</h3>
+
+### 📖 Tanım  
+**Unit of Work Design Pattern**, birden fazla repository üzerinde yapılan işlemleri tek bir **iş birimi (transaction)** içinde toplayan  
+ve hep birlikte kaydedilmesini sağlayan bir **davranışsal / altyapısal (transactional)** tasarım desenidir.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- Aynı anda birden fazla tabloya işlem yapılırken **tutarlılığı sağlamak** için  
+- `SaveChanges()` gibi metotların her yerde dağınık kullanılmasını **engellemek** için  
+- **Transaction yönetimini merkezileştirmek** için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. Bir **UnitOfWork arayüzü** tanımlanır → `Commit()`, `Rollback()` gibi metotlar içerir  
+2. Her repository, **UnitOfWork** üzerinden yönetilir  
+3. İşlemler yapılır → en sonunda `Commit()` çağrılır  
+4. Eğer hata olursa → `Rollback()` yapılır, tüm değişiklikler geri alınır  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **banka transferi** düşün:  
+
+- Ali’nin hesabından **100₺ çekiliyor**, Veli’nin hesabına **yatırılıyor**  
+- Eğer çekme başarılı, yatırma başarısız olursa → **para kaybolur**  
+- **Unit of Work** → “İki işlem bir bütün” olarak yönetilir  
+- Ya ikisi **birlikte başarılı olur**, ya da ikisi **birlikte iptal edilir**  
+
+---
+
+### ✅ Özet  
+- **Unit of Work Pattern** → Birden fazla işlemi tek transaction altında toplar  
+- **Avantajı** → Veri tutarlılığı, transaction yönetimi, kodun düzenli olması  
+
+---
+
+<p align="center">
+<img width="744" height="569" alt="image" src="https://github.com/user-attachments/assets/33426003-05f2-4af7-b4c1-c5c8786d60ee" />
+</p>
