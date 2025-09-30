@@ -797,7 +797,7 @@ Strategy Pattern → Farklı algoritmalar arasında çalışma zamanında seçim
 Avantajı → Esneklik, modülerlik, kolay bakım.  
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/4ef16f44-9ad0-4c5a-9df8-1a9a5a3dddf0" width="70%" />
+<img width="756" height="761" alt="image" src="https://github.com/user-attachments/assets/13a06661-3464-4ea0-9f34-433b01c50efd" />
 </p>
 
 ---
@@ -830,7 +830,7 @@ Template Method Pattern → Algoritmanın iskeletini tanımlar, alt sınıflara 
 Avantajı → Kod tekrarını azaltır, süreçlerin tutarlı olmasını sağlar.  
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/7df00947-2041-40b8-98a0-5392f0c2c946" width="70%" />
+<img width="761" height="750" alt="image" src="https://github.com/user-attachments/assets/7aa8bf1b-a142-45ec-97e0-4317c2e75701" />
 </p>
 
 ---
@@ -864,5 +864,5 @@ Unit of Work Pattern → Birden fazla işlemi tek bir transaction altında topla
 Avantajı → Tutarlılık, güvenlik, transaction yönetimi, hata durumunda rollback.  
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/3f16bb9a-1563-498d-9cb4-bd3037a50ff2" width="70%" />
+<img width="761" height="685" alt="image" src="https://github.com/user-attachments/assets/be63a197-a699-48f8-91e9-588d3a3ff341" />
 </p>
