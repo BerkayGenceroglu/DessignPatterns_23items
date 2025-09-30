@@ -3,7 +3,7 @@
 Bu repo, yazılım geliştirme sürecinde sıklıkla kullanılan **Tasarım Desenleri (Design Patterns)** üzerine hazırlanmıştır.  
 Her bir tasarım deseni için:
  
-- **Tanım**
+- **Tanım** 
 - **Avantajlar ve kullanım alanları**   
 - **Günlük hayattan benzetmeler**  
 - **C# ile örnek kod uygulamaları**  
