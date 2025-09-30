@@ -156,7 +156,7 @@ Kumanda değişmeden cihaz türü değişebilir.
 
 
 <p align="center">
-<img width=800" height="550" alt="image" src="https://github.com/user-attachments/assets/bc68ee25-5c30-4159-bc62-8f7437b953c3" />
+<img width="690" height="694" alt="image" src="https://github.com/user-attachments/assets/31bbeb8d-1bcc-4f8b-bf37-0b78a0819ba5" />
 </p>
 
 ---
