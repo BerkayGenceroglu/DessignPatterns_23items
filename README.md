@@ -783,3 +783,134 @@ Bir **fotokopi makinesi** düşün:
 </p>
 
 ---
+<h3 align="center">18 - Proxy Design Pattern</h3>
+
+### 📖 Tanım  
+**Proxy Design Pattern**, başka bir nesneye **erişimi kontrol etmek** için kullanılan bir **yapısal (structural)** tasarım desenidir.  
+Proxy, gerçek nesnenin yerine geçer ama asıl işi gerekirse **Real Subject**’e yönlendirir.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- Nesneye **doğrudan erişimi sınırlandırmak** için  
+- Nesneye erişmeden önce **güvenlik, önbellekleme (cache), loglama** gibi ek işlemler yapmak için  
+- **Ağ üzerinden**, uzaktaki nesnelerle çalışırken (**Remote Proxy**)  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. Bir **Subject arayüzü** tanımlanır  
+2. **RealSubject** → Asıl işi yapan sınıf  
+3. **Proxy** → Subject arayüzünü uygular ama isteği önce kendinde işler, gerekirse **RealSubject**’e yönlendirir  
+4. **Client** → Proxy üzerinden **RealSubject**’e ulaşır  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **güvenlikli bina** düşün:  
+
+- **RealSubject** → Patronun odası  
+- **Proxy** → Güvenlik görevlisi  
+- **Çalışan** → Doğrudan patronun odasına giremez → önce güvenliğe gelir  
+- **Güvenlik (Proxy)** → Kimlik kontrolü yapar, uygun görürse patrona yönlendirir  
+
+---
+
+### ✅ Özet  
+- **Proxy Pattern** → Nesneye erişim kontrolü sağlar  
+- **Avantajı** → Güvenlik, performans (cache), uzaktan erişim kolaylığı  
+
+---
+
+<p align="center">
+  <img width="759" height="471" alt="image" src="https://github.com/user-attachments/assets/dddb5f9e-a608-4a28-bd38-1c5a12ae7570" />
+</p>
+
+---
+
+<h3 align="center">19 - Repository Pattern</h3>
+
+### 📖 Tanım  
+**Repository Pattern**, uygulamada kullanılan veriye erişim (**CRUD**) işlemlerini tek bir yerde toplayarak,  
+iş mantığı ile veritabanı arasına bir **aracı katman** koyan bir tasarım desenidir.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- Veritabanı sorgularını **tekrarlamamak** için  
+- İş katmanını (**service/controller**) veritabanı bağımlılıklarından **ayırmak** için  
+- **Test edilebilirliği** ve **bakımı kolaylaştırmak** için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. Bir **`IRepository<T>` arayüzü** yazılır → `GetAll()`, `GetById()`, `Add()`, `Update()`, `Delete()` gibi metotlar içerir  
+2. **Concrete Repository** sınıfı, bu arayüzü uygular ve **EF Core / Dapper / ADO.NET** gibi teknolojilerle gerçek sorguları çalıştırır  
+3. **Service katmanı** → Repository üzerinden veriye erişir  
+4. **Controller** → Servisi çağırır, veritabanı detaylarını bilmez  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **alışveriş sitesi** düşün:  
+
+- **Database** → Depo (ürünler orada saklanıyor)  
+- **Repository** → Depo görevlisi  
+- **Service** → Satış görevlisi  
+- **Müşteri (Controller)** → “Bana ürün getir” der, ama deponun nasıl düzenlendiğini bilmez.  
+  Depo görevlisi (**Repository**) ürünü bulur ve satış görevlisine verir.  
+
+---
+
+### ✅ Özet  
+- **Repository Pattern** → Veritabanı ile iş katmanı arasına soyutlama katmanı koyar  
+- **Avantajı** → Kod tekrarını azaltır, bağımlılığı düşürür, test etmeyi kolaylaştırır  
+
+---
+
+<p align="center">
+<img width="886" height="674" alt="image" src="https://github.com/user-attachments/assets/ec94217b-06ee-4fc8-b459-31773c7f65dd" />
+</p
+ 
+---
+<h3 align="center">20 - Singleton Design Pattern</h3>
+
+### 📖 Tanım  
+**Singleton Design Pattern**, bir sınıfın yalnızca **tek bir örneğinin (instance)** oluşturulmasını  
+ve bu örneğe **global erişim** sağlanmasını garanti eden bir **oluşturucu (creational)** tasarım desenidir.  
+
+---
+
+### 🎯 Neden Kullanılır?  
+- Uygulama genelinde ortak kullanılacak bir nesne gerektiğinde (**Logger, Cache, Config**)  
+- Gereksiz **bellek tüketimini engellemek** için  
+- **Merkezi yönetim** ve kontrol sağlamak için  
+
+---
+
+### ⚙️ Nasıl Kullanılır?  
+1. Sınıfın **constructor’ı private** yapılır → dışarıdan `new`’lenemez  
+2. Sınıf içinde **static bir instance** tutulur  
+3. `GetInstance()` metodu ile bu tek örneğe erişilir  
+4. Her çağrıda **aynı nesne** döndürülür  
+
+---
+
+### 🌍 Günlük Hayat Örneği  
+Bir **ülkenin cumhurbaşkanı** düşün:  
+
+- Her ülkede aynı anda **tek bir cumhurbaşkanı** vardır  
+- Halk veya kurumlar ona erişmek isterse → **aynı kişiye** ulaşır  
+- Yeni seçim olana kadar başka bir **“new” yapılamaz**  
+
+---
+
+### ✅ Özet  
+- **Singleton Pattern** → Bir sınıfın sadece tek bir örneği olmasını sağlar  
+- **Avantajı** → Global erişim, kaynak tasarrufu, merkezi kontrol  
+
+---
+
+<p align="center">
+![Uploading image.png…]()
+</p>
