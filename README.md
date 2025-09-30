@@ -1,4 +1,5 @@
-<h1 align="center">Design Patterns (Tasarım Desenleri-23 Tane)</h1>
+<h1 align="center">Design Patterns (Tasarım Desenleri-23 Adet)
+ )</h1>
 
 Bu repo, yazılım geliştirme sürecinde sıklıkla kullanılan **Tasarım Desenleri (Design Patterns)** üzerine hazırlanmıştır.  
 Her bir tasarım deseni için:
