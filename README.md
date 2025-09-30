@@ -323,6 +323,8 @@ Avantajı → Performans artışı, okunabilir kod, karmaşanın azalması.
 <p align="center">
 <img src="https://github.com/user-attachments/assets/1d05a521-753d-40ba-a0e8-9e3146a996dd" width="70%" />
 </p>
+
+---
 <h3 align="center">9 - Decorator Design Pattern</h3>
 
 📖 **Tanım**  
